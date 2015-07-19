@@ -1,0 +1,29 @@
+\documentclass[12pt,a4paper]{moderncv}
+
+\makeatletter
+\def\input@path{{classes/}}
+\makeatother
+
+\usepackage{publications}
+
+\moderncvstyle{casual}
+\moderncvcolor{blue}
+
+\addbibresource{bibliography/publications.bib}
+
+\name{Malcolm}{Ramsay}
+\title{Computational Chemist}
+\phone[mobile]{0466~224~898}
+\email{malramsay64@gmail.com}
+\homepage{github.com/malramsay64}
+\photo[64pt]{portrait}
+
+
+\newcommand{\cvreference}[5]{%
+    \textbf{#1}\newline%
+    \ifthenelse{\equal{#2}{}}{}{#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{\phonesymbol~#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\href{mailto:#5}{#5}\newline}%
+}
+

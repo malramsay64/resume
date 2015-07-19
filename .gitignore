@@ -1,5 +1,5 @@
 # Output file
-resume.pdf
+*.pdf
 
 # Output files
 .output

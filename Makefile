@@ -3,7 +3,7 @@
 input=resume.tex
 output=.output
 
-latex=xelatex
+latex=pdflatex
 bib=biber
 pdf_flags=--output-dir=$(output) #--shell-escape
 pre_flags=-draftmode
@@ -35,6 +35,11 @@ $(input:.tex=.pdf): $(input) $(folders) $(bibfile) | $(output)
 
 $(bibfile): $(master_bibfile) bibliography/convert.py bibliography/journals.txt
 	( cd bibliography; python convert.py ../$(master_bibfile) $(abbrev))
+
+%:letters/%.tex
+	$(latex) $(pre_flags) $(pdf_flags) $<
+	$(latex) $(pdf_flags) $<
+	mv $(output)/$@.pdf .
 
 .PHONY:clean
 clean:
