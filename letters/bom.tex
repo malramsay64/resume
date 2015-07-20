@@ -1,4 +1,9 @@
-\input{../preamble,}
+\input{../preamble.tex}
+
+
+\recipient{~}{~}
+\date{\today}
+\opening{Dear Sir/Madam,}
 \closing{Regards,}
 
 \begin{document}
@@ -9,18 +14,20 @@ I am writing to apply for the position of Science Programmer - Numerical Weather
 
 % A solid background in science, mathematics or computing with experience analysing or processing scientific datasets. An understanding of numerical methods used for the analysis and prediction of the atmosphere or ocean would be beneficial.
 
-I have a strong understanding of the computational and mathematical methods required for, the processing of scientific datasets, and the numerical methods used in the solution of partial differential equations used for the prediction of events. During the course of my Honours project I was using molecular dynamics simulations to calculate the dynamics of low temperature molecular liquids. The analysis of the data from these simulations required large amounts of post processing to put the data in a form that is easily to analyse. Over the course of studying my Computational Science Major as part of the coursework I was learning ways to find numerical solutions to elliptic, parabolic and hyperbolic partial differential equations. A significant focus of this study was finding solutions to the Schr\"odinger equation, important for predicting results in Chemistry.
+I have a strong understanding of the computational and mathematical methods required for, the processing of scientific datasets, and the numerical methods used in the solution of partial differential equations used for the prediction of events. During the course of my Honours project I was using molecular dynamics simulations to calculate the dynamics of low temperature molecular liquids. The analysis of the data from these simulations required large amounts of post processing to put the data in a form that is easily to analyse. Over the course of studying my Computational Science Major as part of the coursework I was learning ways to find numerical solutions to elliptic, parabolic and hyperbolic partial differential equations. A significant focus of this study was finding solutions to the Schr\"odinger equation (\href{https://github.com/malramsay64/schrodinger}{github.com/malramsay64/schrodinger}, important for predicting results in Chemistry.
 
 % The ability to contribute to implementing upgrades to operational numerical weather prediction and related software systems, diagnose and prioritise problems and respond to operational incidents. A willingness to participate in an out of hours support roster.
 
+During the course of my thesis I was using a number computers and computing platforms for development, for both redundancy and to speed up the computationally intensive parts of my project by distributing the computing load. All these different computers required a consistent development environment such that the programs I had developed for one platform were compatible across all of them. To achieve this I wrote scripts to install the required dependencies and to standardise the user interface across machines. This allowed me to continue working with minimal disruption even when my main computer required repairs. The completion of my thesis required a large amount of out of hours work, so I am willing to participate in an out of ours support roster.
 
 
 % Well-developed computing skills including code management and testing. Knowledge of scripting in UNIX/Linux environment is essential. Experience in programming languages such as python, C and/or Fortran is also important.
 
-Honours project
+During the writing of my thesis I was required to develop software to perform analysis of my simulations. I needed to write code that was constantly being updated and expanded and providing correct results. To keep track of the changes in the code I used a git repository, allowing me to make changes with no fear of being unable to reverse them. To ensure correctness each class and function was tested individually as it was implemented or changed ensuring it provided the desired output. Along with testing correctness, I also had to test the runtime of this computationally demanding analysis. The majority of the code was written in C++, however it was hypothesised that writing some computationally demanding parts in Fortran might result in performance benefits. In this case the overheads of putting the data in a Fortran friendly format was found to be a performance deficit. Another avenue of performance enhancement pursued was multi-threading, dividing the molecules in the simulation amongst the available processors. Again testing the parallel performance was important since I found that the limiting factor was the Input/Output, a non-parallelisable task. To make better use of the parallel capability of the computers I was using I chose an alternate approach, using Python to generate input files and Bash scripting to run parallel instances of the analysis. By testing my changes I was able to make the most of the computing power I had available.
 
 % A demonstrated familiarity with software engineering principles
 
+During the course of my Honours thesis I had to develop code to perform analysis of my simulations to extract useful information (\href{https://github.com/malramsay64/analysis}{github.com/malramsay64/analysis}. In developing this code I had to be familiar with the software engineering principles. Throughout the project I had to develop in a way that anticipated change, the direction taken during the project was influenced by each set of results, meaning continual development and changes. One of the ways in which I anticipated change was the modularity of the code base, analyses could be easily added and removed as required with minimal impact on other elements. This modularity was aided by the abstraction of the code, as much of the inner workings of the code were abstracted allowing easy access of the inner working of the code for optimisation. Because of all the different components in the code base I made sure to be consistent throughout, making it easy for me to come back and understand any section of the code.
 
 
 % Personal qualities such as initiative, judgement, perseverance and an ability to work in a team environment and to liaise effectively with research and operations staff.
@@ -28,6 +35,8 @@ Honours project
 Army, teamwork, taking orders advice from others to do my job.
 
 % Understanding of the elements of the Bureau's Social Justice Strategy and a commitment to apply them in practice.
+
+
 
 \makeletterclosing
 
