@@ -5,12 +5,7 @@ output=.output
 
 latex=pdflatex
 bib=biber
-pdf_flags=--output-dir=$(output) #--shell-escape
-pre_flags=-draftmode
-master_bibfile:=../publications.bib
-master_bibfile:=$(shell if [ -e $(master_bibfile) ]; then echo $(master_bibfile); fi)
 bibfile=bibliography/publications.bib
-abbrev=false
 
 empty=
 space=$(empty) $(empty)
@@ -23,18 +18,10 @@ endif
 
 all: $(input:.tex=.pdf)
 
-bib: $(bibfile)
-
 $(input:.tex=.pdf): $(input) $(folders) $(bibfile) | $(output)
 	$(shell export TEXINPUTS=.:$(subst $(space),:,$(folders)))
-	$(latex) $(pre_flags) $(pdf_flags) $(input)
-	$(bibcommand)
-	$(latex) $(pre_flags) $(pdf_flags) $(input)
-	$(latex) $(pdf_flags) $(input)
+	latexmk -pdf -outdir=$(output) $(input)
 	mv $(output)/$(input:.tex=.pdf) .
-
-$(bibfile): $(master_bibfile) bibliography/convert.py bibliography/journals.txt
-	( cd bibliography; python convert.py ../$(master_bibfile) $(abbrev))
 
 %:letters/%.tex
 	$(latex) $(pre_flags) $(pdf_flags) $<
