@@ -18,7 +18,7 @@ endif
 
 all: $(input:.tex=.pdf)
 
-$(input:.tex=.pdf): $(input) $(folders) $(bibfile) | $(output)
+$(input:.tex=.pdf): $(input) preamble.tex $(folders) $(bibfile) | $(output)
 	$(shell export TEXINPUTS=.:$(subst $(space),:,$(folders)))
 	latexmk -pdf -outdir=$(output) $(input)
 	mv $(output)/$(input:.tex=.pdf) .
@@ -32,7 +32,6 @@ $(input:.tex=.pdf): $(input) $(folders) $(bibfile) | $(output)
 clean:
 	-rm -rf $(output)
 	-rm -f $(input:.tex=.pdf)
-	-rm $(bibfile)
 
 clean-cache:
 	rm -rf $$(biber --cache)

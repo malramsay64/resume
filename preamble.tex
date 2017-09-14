@@ -4,12 +4,16 @@
 \def\input@path{{classes/}}
 \makeatother
 
+\usepackage[utf8]{inputenc}
 \usepackage{publications}
-\usepackage{fullpage}
-\usepackage{nth}
+\usepackage[super]{nth}
+\usepackage[scale=0.85]{geometry}
 
 \moderncvstyle{casual}
 \moderncvcolor{blue}
+
+% Change the width of the column with dates
+\setlength{\hintscolumnwidth}{2.5cm}
 
 \addbibresource{bibliography/publications.bib}
 
@@ -18,7 +22,10 @@
 \phone[mobile]{0466~224~898}
 \email{malramsay64@gmail.com}
 \homepage{github.com/malramsay64}
-%\photo[64pt]{portrait}
+\homepage{malramsay.com}
+\social[linkedin]{malramsay64}
+%\social[twitter]{jdoe}
+\social[github]{malramsay64}
 
 
 \newcommand{\cvreference}[5]{%
@@ -29,4 +36,14 @@
     \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\href{mailto:#5}{#5}\newline}%
 }
 
+\newcommand{\daterange}[2]{%
+  \begin{center}
+    % This ensures the correct spacing
+    \vspace{-2em}
+    #2 \\
+     | \\
+    #1
+  \end{center}
+}
 
+\newcommand{\chref}[2]{\href{#1}{\color{color1}#2}}
