@@ -37,13 +37,14 @@
 }
 
 \newcommand{\daterange}[2]{%
+  % This ensures the correct spacing
+  \vspace{-2em}
   \begin{center}
-    % This ensures the correct spacing
-    \vspace{-2em}
     #2 \\
      | \\
     #1
   \end{center}
+  \vspace{-2em}
 }
 
 \newcommand{\chref}[2]{\href{#1}{\color{color1}#2}}
