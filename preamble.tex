@@ -4,13 +4,14 @@
 \def\input@path{{classes/}}
 \makeatother
 
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
 \usepackage{publications}
 \usepackage[super]{nth}
 \usepackage[scale=0.85]{geometry}
 \usepackage{enumitem}
 \setlist{itemindent=2ex, itemsep=0em, topsep=0em, parsep=0em}
 
+\defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g. \newfontfamily{\FA}{FontAwesome} > \newfontfamily{\FA}{FontAwesome.otf}
 \moderncvstyle{casual}
 \moderncvcolor{blue}
 
