@@ -8,6 +8,7 @@
 \usepackage{publications}
 \usepackage[super]{nth}
 \usepackage[scale=0.85]{geometry}
+\usepackage{tikz}
 
 \moderncvstyle{casual}
 \moderncvcolor{blue}
@@ -48,3 +49,16 @@
 }
 
 \newcommand{\chref}[2]{\href{#1}{\color{color1}#2}}
+
+\newcommand\cvskills[4]{%
+  \cvcomputer{}{\skills{#1}{#2}}{}{\skills{#3}{#4}}
+}
+
+
+\newcommand\skills[2]{%
+  #1 \hfill%
+  \begin{tikzpicture}
+    \draw[fill=color2,color2, opacity=0.3] (0, 0) rectangle (3, 0.3);
+    \draw[fill=color1,color1] (0, 0) rectangle (#2 * 3, 0.3);
+  \end{tikzpicture}
+}
