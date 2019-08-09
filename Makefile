@@ -20,12 +20,11 @@ all: $(input:.tex=.pdf)
 
 $(input:.tex=.pdf): $(input) preamble.tex $(folders) $(bibfile) | $(output)
 	$(shell export TEXINPUTS=.:$(subst $(space),:,$(folders)))
-	latexmk -pdf -outdir=$(output) $(input)
+	latexmk -pdf -xelatex -outdir=$(output) $(input)
 	mv $(output)/$(input:.tex=.pdf) .
 
 %:letters/%.tex
-	$(latex) $(pre_flags) $(pdf_flags) $<
-	$(latex) $(pdf_flags) $<
+	latexmk -pdf -xelatex -outdir=$(output) letters/$@.tex
 	mv $(output)/$@.pdf .
 
 .PHONY:clean

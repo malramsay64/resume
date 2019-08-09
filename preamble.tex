@@ -4,17 +4,20 @@
 \def\input@path{{classes/}}
 \makeatother
 
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
 \usepackage{publications}
 \usepackage[super]{nth}
 \usepackage[scale=0.85]{geometry}
 \usepackage{tikz}
+\usepackage{enumitem}
+\setlist{itemindent=2ex, itemsep=0em, topsep=0em, parsep=0em}
 
+\defaultfontfeatures{Extension = .otf}% adds .otf to end of path when font loaded without ext parameter e.g. \newfontfamily{\FA}{FontAwesome} > \newfontfamily{\FA}{FontAwesome.otf}
 \moderncvstyle{casual}
 \moderncvcolor{blue}
 
 % Change the width of the column with dates
-\setlength{\hintscolumnwidth}{2.5cm}
+\setlength{\hintscolumnwidth}{2cm}
 
 \addbibresource{bibliography/publications.bib}
 
@@ -22,12 +25,10 @@
 \title{Computational Chemist}
 \phone[mobile]{0466~224~898}
 \email{malramsay64@gmail.com}
-\homepage{github.com/malramsay64}
 \homepage{malramsay.com}
 \social[linkedin]{malramsay64}
 \social[twitter]{malramsay64}
 \social[github]{malramsay64}
-
 
 \newcommand{\cvreference}[5]{%
     \textbf{#1}\newline%
@@ -38,15 +39,9 @@
 }
 
 \newcommand{\daterange}[2]{%
-  % This ensures the correct spacing
-  \vspace{-2em}
-  \begin{center}
-    #2 \\
-     | \\
-    #1
-  \end{center}
-  \vspace{-2em}
-}
+    \hfill #2\\
+    |\hspace{2em}~\\
+    \hfill #1}
 
 \newcommand{\chref}[2]{\href{#1}{\color{color1}#2}}
 
