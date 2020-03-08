@@ -1,7 +1,7 @@
 
 
 input=resume.tex
-output=.output
+makedir=output
 
 latex=pdflatex
 bib=biber
@@ -18,13 +18,16 @@ endif
 
 all: $(input:.tex=.pdf)
 
-$(input:.tex=.pdf): $(input) preamble.tex $(folders) $(bibfile) | $(output)
-	$(shell export TEXINPUTS=.:$(subst $(space),:,$(folders)))
-	latexmk -pdf -xelatex -outdir=$(output) $(input)
-	mv $(output)/$(input:.tex=.pdf) resume_Malcolm_Ramsay.pdf
+$(input:.tex=.pdf): $(input) preamble.tex $(folders) $(bibfile) | $(makedir)
+	tectonic -o $(makedir) --keep-intermediates -r0 $<
+	if [ -f $(makedir)/$(notdir $(<:.tex=.bcf)) ]; then biber --input-directory $(makedir) $(notdir $(<:.tex=)); fi
+	tectonic -o $(makedir) --keep-intermediates -r1 $<
+	cp $(makedir)/$(notdir $@) resume_Malcolm_Ramsay.pdf
 
 %:letters/%.tex
-	latexmk -pdf -xelatex -outdir=$(output) letters/$@.tex
+	tectonic -o $(makedir) --keep-intermediates -r0 letters/$@.tex
+	if [ -f $(makedir)/$(notdir $(<:.tex=.bcf)) ]; then biber --input-directory $(makedir) $(notdir $(<:.tex=)); fi
+	tectonic -o $(makedir) --keep-intermediates -r1 $<
 	mv $(output)/$@.pdf .
 
 .PHONY:clean
@@ -35,6 +38,6 @@ clean:
 clean-cache:
 	rm -rf $$(biber --cache)
 
-$(output):
-	mkdir $(output)
-	$(foreach f, $(folders), mkdir $(output)/$(f); )
+$(makedir):
+	mkdir $(makedir)
+	$(foreach f, $(folders), mkdir $(makedir)/$(f); )
