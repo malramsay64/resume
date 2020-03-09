@@ -1,0 +1,22 @@
+name: Compile Document
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        id: cache
+        with:
+          path: ~/.cache/Tectonic
+          key: tectonic_cache
+          restore-keys: tectonic_cache
+
+      - name: Install environment using conda
+        run: $CONDA/bin/conda env create -n build
+
+      - name: Compile
+        run: source $CONDA/bin/activate build && make
