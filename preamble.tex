@@ -17,12 +17,12 @@
 \moderncvcolor{blue}
 
 % Change the width of the column with dates
-\setlength{\hintscolumnwidth}{2cm}
+\setlength{\hintscolumnwidth}{2.5cm}
 
 \addbibresource{bibliography/publications.bib}
 
 \name{Malcolm}{Ramsay}
-\title{Computational Chemist}
+\title{Data Scientist / Software Engineer}
 \phone[mobile]{0466~224~898}
 \email{malramsay64@gmail.com}
 \homepage{malramsay.com}
@@ -38,10 +38,7 @@
     \ifthenelse{\equal{#5}{}}{}{\emailsymbol~\href{mailto:#5}{#5}\newline}%
 }
 
-\newcommand{\daterange}[2]{%
-    \hfill #2\\
-    |\hspace{2em}~\\
-    \hfill #1}
+\newcommand{\daterange}[2]{#1 -- #2}
 
 \newcommand{\chref}[2]{\href{#1}{\color{color1}#2}}
 
