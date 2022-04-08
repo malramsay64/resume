@@ -1,62 +1,102 @@
 %-------------------------------------------------------------------------------
-%	PERSONAL INFORMATION
-%	Comment any of the lines below if they are not required
-%-------------------------------------------------------------------------------
-% Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{{\bf Dr} Malcolm}{Ramsay}
-\position{Data Scientist}
-
-\mobile{+61~466~224~898}
-\email{m@malramsay.com}
-%\dateofbirth{January 1st, 1970}
-\homepage{malramsay.com}
-\github{malramsay64}
-\linkedin{malramsay64}
-% \gitlab{gitlab-id}
-% \stackoverflow{SO-id}{SO-name}
-\twitter{@malramsay64}
-% \skype{skype-id}
-% \reddit{reddit-id}
-% \medium{medium-id}
-% \kaggle{kaggle-id}
-% \googlescholar{googlescholar-id}{name-to-display}
-%% \firstname and \lastname will be used
-% \googlescholar{googlescholar-id}{}
-% \extrainfo{extra information}
-
-\quote{
-  Malcolm is a highly motivated Data Scientist,
-  experienced in the management, analysis, and communication of data.
-  Malcolm’s strengths lie in understanding the complete picture of data,
-  working with constrained resources to
-  present results in a cohesive and understandable manner.
-}
-
-%-------------------------------------------------------------------------------
-\begin{document}
-
-% Print the header with above personal information
-% Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
-
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {Dr Malcolm Ramsay}
-  {}
-  {\thepage}
-
-
-%-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/recent_employment.tex}
+
+\cvsection{Professional Experience}
+
+% {environment} {Job Title} {Organisation} {Location} {Dates}
+\begin{cventry}{Data Consultant} {ASG Group}{}{2021 - Present}
+  Malcolm is part of the Data Practice with ASG,
+  where he is contributes mentoring and technical expertise.
+  Malcolm is also part of the ASG Labs project
+  where he works to bring data to life through
+  proof of concept technology demonstrations.
+
+  Malcolm has spent most of his time at ASG engaged with SA Power Networks
+  building out their data analytics pipeline
+  as part of standing up their data lake.
+  Malcolm has led the technical team
+  building out reports for regulatory submissions,
+  managing and prioritising the
+  tasks and workflows of all team members.
+  Malcolm worked at all levels of the Azure data analytics stack
+  including Azure Data Factory, Azure Data Lake, Synapse, Azure SQL, and Databricks
+  choosing the technologies appropriate to the task at hand.
+  As part of standing up this environment,
+  Malcolm has been developing best practices
+  for data management, design patterns, and support,
+  and leading the way in the use of the available tools.
+
+  A key component of Malcolm's work is the use of
+  the Machine Learning Workflows within Databricks,
+  ensuring data provenance and the reproducibility of the models
+  he has developed and deployed.
+\end{cventry}
+
+% {environment} {Job Title} {Organisation} {Location} {Dates}
+\begin{cventry}{Software Engineer (Machine Learning)}{Adelaide MRI}{}{2020 - 2021}
+  Malcolm was responsible for the development of an internal Web Application
+  aiding the writing of reports resulting from medical imaging.
+  \begin{itemize}
+    \item Developed Machine Learning pipelines to provide predictive
+      suggestions during the report production process, reducing the time spent
+      writing reports by 21\%.
+    \item Optimised common database queries, reducing the execution time by
+      up to 90\%.
+    \item Responsible for architecting solutions
+      within the python back-end, including;
+      designing database models in SQLAlchemy,
+      designing RESTful APIs,
+      optimising API performance,
+      and incorporating security updates into the development process.
+    \item Mentored graduate students in applying programming and data science
+      best practices.
+  \end{itemize}
+\end{cventry}
+
+% {environment} {Job Title} {Organisation} {Location} {Dates}
+\begin{cventry}{eResearch Trainer, eResearch Training Administrator}{Intersect Australia}{}{2018 - 2020}
+  Malcolm worked at Intersect to deliver training in programming tools
+  to researchers at Universities across Australia.
+  \begin{itemize}
+    \item Developed and documented best practices for delivering Online
+      training for programming languages during COVID-19 resulting in an
+      18 point NPS improvement over the same suite of courses delivered in person.
+    \item Developed and presented a webinar
+      \chref{https://youtu.be/ViUIXTIVCvs}
+      {"A Showcase of Data Analysis in Python and R: A case study using COVID-19 data"}
+      demonstrating best practices in data analysis on a dataset.
+    \item Liaised with stakeholders to organise and manage the delivery of high
+      quality training courses in a changing environment.
+    \item Delivered online training courses across a range of eResearch topics
+      including Python, R, Julia, Git, SQL, MATLAB, and HPC.
+    \item 100\% Net Promoter Score (NPS) for runnning Programming using Julia training.
+    \item 100\% NPS running Introduction to Programming using R training.
+  \end{itemize}
+\end{cventry}
+
+% {environment} {Job Title} {Organisation} {Location} {Dates}
+\begin{cventry}{Co-Founder, Chief Scientist}{FluroSat}{}{2016 - 2017}
+Malcolm Co-Founded the startup FluroSat, 
+  bringing image processing techniques from academia
+  and providing the resulting information at key decision points
+  within the agricultural value chain.
+  \begin{itemize}
+    \item Implemented scalable workflows for processing remote sensing data on AWS.
+    \item Developed tools for image processing and analysis in Python.
+    \end{itemize}
+  \textbf{Achievements}
+  \begin{itemize}
+      \item Portfolio company in the Muru-D accelerator program
+      \item Best Team, Cicada Innovations Nobel Gala Dinner
+      \item Finalist, World Bank Big Data Challenge
+  \end{itemize}
+\end{cventry}
+
 % \input{cv/employment.tex}
-\input{cv/recent_education.tex}
+% \input{cv/recent_education.tex}
 % \input{cv/education.tex}
 % \input{cv/other_employment.tex}
-\input{cv/skills.tex}
+% \input{cv/skills.tex}
 
 %-------------------------------------------------------------------------------
