@@ -8,8 +8,8 @@
 \begin{cventry}{Data Consultant} {ASG Group}{}{2021 - Present}
   Malcolm is part of the Data Practice with ASG,
   where he is contributes mentoring and technical expertise.
-  Malcolm is also part of the ASG Labs project
-  where he works to bring data to life through
+  Malcolm is also a key member of the ASG Labs project,
+  where he brings data to life through
   proof of concept technology demonstrations.
 
   Malcolm has spent most of his time at ASG engaged with SA Power Networks
@@ -35,8 +35,12 @@
 
 % {environment} {Job Title} {Organisation} {Location} {Dates}
 \begin{cventry}{Software Engineer (Machine Learning)}{Adelaide MRI}{}{2020 - 2021}
-  Malcolm was responsible for the development of an internal Web Application
-  aiding the writing of reports resulting from medical imaging.
+  Malcolm was part of a small team developing an internal web applicaiton
+  used by Doctors to write medical imaging reports.
+  Malcolm worked to integrate Machine Learning techniques 
+  into this reporting application,
+  improving the experience of the Doctors writing these reports
+  by making recommened statements more accessible.
   \begin{itemize}
     \item Developed Machine Learning pipelines to provide predictive
       suggestions during the report production process, reducing the time spent
@@ -56,8 +60,13 @@
 
 % {environment} {Job Title} {Organisation} {Location} {Dates}
 \begin{cventry}{eResearch Trainer, eResearch Training Administrator}{Intersect Australia}{}{2018 - 2020}
-  Malcolm worked at Intersect to deliver training in programming tools
-  to researchers at Universities across Australia.
+  Malcolm worked at Intersect to develop and deliver training 
+  in a range of programming tools
+  targeted for researchers at Universities across Australia.
+  Malcolm worked at all stages of the training process, 
+  includign design of the content, 
+  the preparation of the material, managing attendees, 
+  content delivery, review of course performance.
   \begin{itemize}
     \item Developed and documented best practices for delivering Online
       training for programming languages during COVID-19 resulting in an
@@ -66,20 +75,18 @@
       \chref{https://youtu.be/ViUIXTIVCvs}
       {"A Showcase of Data Analysis in Python and R: A case study using COVID-19 data"}
       demonstrating best practices in data analysis on a dataset.
-    \item Liaised with stakeholders to organise and manage the delivery of high
-      quality training courses in a changing environment.
     \item Delivered online training courses across a range of eResearch topics
       including Python, R, Julia, Git, SQL, MATLAB, and HPC.
-    \item 100\% Net Promoter Score (NPS) for runnning Programming using Julia training.
-    \item 100\% NPS running Introduction to Programming using R training.
+    \item 100\% Net Promoter Score (NPS) for runnning Programming using Julia and Programming using R.
+    % \item 100\% NPS running Introduction to Programming using R training.
   \end{itemize}
 \end{cventry}
 
 % {environment} {Job Title} {Organisation} {Location} {Dates}
 \begin{cventry}{Co-Founder, Chief Scientist}{FluroSat}{}{2016 - 2017}
-Malcolm Co-Founded the startup FluroSat, 
+  Malcolm Co-Founded the startup FluroSat, 
   bringing image processing techniques from academia
-  and providing the resulting information at key decision points
+  providing the resulting information at key decision points
   within the agricultural value chain.
   \begin{itemize}
     \item Implemented scalable workflows for processing remote sensing data on AWS.
@@ -93,10 +100,90 @@ Malcolm Co-Founded the startup FluroSat,
   \end{itemize}
 \end{cventry}
 
-% \input{cv/employment.tex}
-% \input{cv/recent_education.tex}
-% \input{cv/education.tex}
-% \input{cv/other_employment.tex}
-% \input{cv/skills.tex}
+\cvsection{Education}
 
-%-------------------------------------------------------------------------------
+
+\begin{cventry}
+  {Doctor of Philosophy (PhD)} % job title
+  {The University of Sydney} % organization
+  {} % location
+  {2016 - 2020} % date(s)
+  Malcolm used a combination of statistical mechanics and data science to
+  study the translational and rotational dynamics
+  of small molecules in the liquid phase.
+  He used a combination of High Performace Computing (HPC) and 
+  GPUs run long timescale computer simluations,
+  generating over 10 TB of data.
+  Malcolm built out a data lake and data processing workflow
+  to handle the analysis of this large dataset.
+  \begin{itemize}
+    \item Created interactive dashboard in python for analysis of simulations
+      combining Bokeh and scikit-learn for real-time machine-learning analysis.
+    \item Used infrastructure as code to define reproducible simulation environments
+      using Ansible and Docker.
+    \item Developed optimised data analysis tools for the analysis of Terabyte sized
+      datasets using Python, Cython, C++, and Rust,
+      using Git, testing, and CI to ensure high quality code.
+    \item Designed effective data visualisations for complex datasets.
+  \end{itemize}
+  \textbf{Achievements}
+  \begin{itemize}
+    \item Winning team, Inventing the Future Competition 2016.
+    \item Finalist, Merck Innovation Challenge 2018.
+    \item Journal of Materials Chemistry C Poster Prize 2018.
+  \end{itemize}
+\end{cventry}
+
+\begin{cventry}
+  {Bachelor of Science (Advanced) Honours} % job title
+  {The University of Sydney} % organization
+  {} % location
+  {2010 - 2015} % date(s)
+  In his Honours thesis,
+  Malcolm used molecular dynamics simulations of small rigid molecules
+  to investigate the effect of shape on structural and dynamic properties.
+
+  \textbf{Achievements}
+  \begin{itemize}
+    \item Completed with \nth{1} Class Honours and \nth{1} in his cohort.
+    \item Received the Walter J Moore Honours Scholarship for academic merit in Honours.
+    \item Sydney Abroad International Exchange Scholarship.
+    \item Dean of Science Undergraduate Exchange Scholarship.
+    \item Received Levy Scholarship for achievement in \nth{1} year chemistry.
+    \item Undertook research through the Summer Scholarship Program.
+  \end{itemize}
+\end{cventry}
+
+\cvsection{Software Skills}
+
+\begin{cvskills}
+
+\cvskill
+  {Data Science} % Category
+  {Python, Numpy, Pandas, scikit-learn, Keras, xgboost, R, Julia, SQL, matplotlib}
+
+\cvskill
+  {Data Engineering} % Category
+  {SQL, Python, Azure Data Factory, Azure Synapse, Databricks}
+
+% \cvskill
+%   {Backend} % Category
+%   {Python, SQLAlchemy, flask, marshmallow}
+
+\cvskill
+  {Frontend} % Category
+  {Javascript, Web Assembly (WASM), CSS, HTML}
+
+\cvskill
+  {Cloud} % Category
+  {Docker, AWS, Azure}
+
+\cvskill
+  {Systems} % Category
+  {Rust, C++, C, CUDA, MPI}
+
+\cvskill
+  {Other} % Category
+  {Git, \LaTeX, Linux, MacOS}
+
+\end{cvskills}
