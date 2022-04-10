@@ -1,15 +1,4 @@
-input=resume.tex
-
-all: $(input:.tex=.pdf)
-
-$(input:.tex=.pdf): $(input) preamble.tex
-	tectonic $<
-	cp $@ resume_Malcolm_Ramsay.pdf
-
-%:letters/%.tex
-	tectonic letters/$@.tex
-	mv $(output)/$@.pdf .
-
-.PHONY:clean
-clean:
-	-rm -f $(input:.tex=.pdf)
+all:
+	@tectonic -X build
+	@cp build/resume/resume.pdf resume_Malcolm_Ramsay.pdf
+	@cp build/resume/resume.pdf cv_Malcolm_Ramsay.pdf
