@@ -6,17 +6,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - uses: actions/cache@v1
+      - uses: actions/cache@v2
         id: cache
         with:
           path: ~/.cache/Tectonic
-          key: tectonic_cache
-          restore-keys: tectonic_cache
+          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
+          restore-keys: |
+             ${{ runner.os }}-tectonic-
+      - uses: wtfjoke/setup-tectonic@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run Tectonic
+        run: make
 
-      - name: Install environment using conda
-        run: $CONDA/bin/conda env create -n build
-
-      - name: Compile
-        run: source $CONDA/bin/activate build && make
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: resume
+          path: resume_Malcolm_Ramsay.pdf
