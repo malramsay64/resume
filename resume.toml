@@ -1,0 +1,433 @@
+[personal]
+email = "m@malramsay.com"
+name = "Malcolm Ramsay PhD"
+# label = "Senior Data Scientist"
+summary = ""
+phone = "+61 466 224 898"
+url = "https://malramsay.com"
+
+[personal.location]
+city = "Adelaide"
+# region = "South Australia"
+country = "Australia"
+
+[[personal.profiles]]
+network = "LinkedIn"
+url = "https://linkedin.com/in/malramsay64"
+username = "malramsay64"
+
+[[personal.profiles]]
+network = "GitHub"
+url = "https://github.com/malramsay64"
+username = "malramsay64"
+
+# The work is the companies and organisations that I worked for,
+# separate to that is going to be the projects that I worked on.
+
+[[work]]
+display = true
+organization = "Cognizant"
+location = "Adelaide, Australia"
+url = "https://cognizant.com/au/en"
+position = "Senior Data Scientist"
+startDate = "2022-08-01"
+endDate = "present"
+summary = "Working in the Adelaide Delivery Centre providing mentorship and training to trainees getting started in their careers in tech."
+highlights = [
+  "Recognition for _Creating conditions for everyone to Thrive_"
+]
+
+[[work]]
+display = true
+organization = "ASG Group (now NRI)"
+location = "Adelaide, Australia"
+url = "https://nri.com.au"
+position = "Data Consultant"
+startDate = "2021-08-01"
+endDate = "2022-07-30"
+summary = "Provided mentoring and technical expertise across the business as a key member of the ASG Data Practice. He was a core member of the ASG Labs project, bringing data to life through proof of concept demonstrations."
+highlights = [
+]
+
+[[work]]
+display = true
+organization = "Adelaide MRI"
+location = "Adelaide, Australia"
+url = "https://nri.com.au"
+position = "Software Engineer (Machine Learning)"
+startDate = "2020-12-03"
+endDate = "2021-07-30"
+summary = "Worked in a small team developing an internal web application aiding Doctors writing their reports."
+highlights = [
+  "Optimised common database queries, reducing the execution time by up to 90%.",
+  "Mentored graduate students in applying programming and data science best practices.",
+]
+
+[[work]]
+display = false
+organization = "Australian Army Reserves"
+location = "Australia"
+position = "Musician"
+startDate = "2010-09-11"
+endDate = "present"
+summary = "Undertaking ceremonial activities including bugling at dawn services, providing entertainment during Army functions and being the public face of the Army at public events including sporting matches and community functions."
+highlights = [
+  "Best Bandsperson Award in 2016",
+  """Directed, Filmed, and Edited the viral music videos;
+    - _I Was Only 19_ watched by over 300_000 people on ANZAC Day in 2015,
+    - _When the War Is Over_ watched by over 700_000 people on ANZAC Day in 2017,
+  """,
+  "Selected as bugler for the Centenary of ANZAC commemorations in Poziéres (France) and Polygon Wood (Belgium).",
+]
+
+[[work]]
+organization = "Intersect Australia"
+location = "Sydney, Australia"
+url = "https://intersect.org.au"
+[[work.positions]]
+position = "eResearch Training Administrator"
+startDate = "2016-02-19"
+endDate = "2019-05-31"
+summary = "Worked at all stages of the training process, including the design of content, the preparation of material, managing attendees, content delivery, and review of course performance."
+highlights = [
+  "Developed and documented best practices for delivering Online training for programming languages during COVID-19 resulting in an 18 point Net Promotor Score improvement over the same suite of courses delivered in person."
+]
+[[work.positions]]
+position = "eResearch Trainer"
+startDate = "2016-02-19"
+endDate = "2019-05-31"
+summary = "Delivered training courses across eResearch topics including Python, R, Julia, Git, SQL, MATLAB, and HPC."
+highlights = [
+  "Received 100% Net Promoter Score running _Programming using Julia_ and _Programming using R_."
+]
+
+[[work]]
+organization = "FluroSat (now Regrow Ag)"
+location = "Sydney, Australia"
+url = "https://www.regrow.ag/"
+position = "Co-Founder, Chief Scientist"
+startDate = "2016-11-01"
+endDate = "2016-06-30"
+summary = "Co-Founder of the startup FluroSat, implementing remote sensing and image processing techniques from academic research to target key decision points within the agricultural value chain."
+highlights = [
+  "Portfolio Company, Telstra's Muru-D Accelerator Program",
+  "Best Team, Cicada Innovations Nobel Gala Dinner",
+  "Finalist, World Bank Big Data Challenge",
+]
+
+[[work]]
+display = false
+organization = "School of Chemistry, The University of Sydney"
+location = "Sydney, Australia"
+url = "https://www.sydney.edu.au/science/schools/school-of-chemistry.html"
+[[work.positions]]
+position = "Research Assisstant"
+startDate = "2014-12-01"
+endDate = "2015-03-30"
+summary = ""
+# highlights = []
+[[work.positions]]
+position = "Laboratory Demonstrator"
+startDate = "2014-08-01"
+endDate = "2016-06-30"
+summary = "I was responsible for the safety and supervision of a group of 1st year chemistry students performing their laboratory component of the course. The supervision component involves teaching proper laboratory techniques, inciting discussion on the processes involved in the experiment, answering questions, and keeping students on track to finish the experiment in the allotted time."
+highlights = [
+  "Communicate complex scientific ideas in a fun, engaging, and interactive manner."
+]
+
+[[work]]
+display = false
+organization = "Australian Sports Drug Testing Laboratory, National Measurement Institute"
+location = "Sydney, Australia"
+# url = ""
+position = "Year in Industry Student"
+startDate = "2012-02-10"
+endDate = "2013-02-20"
+summary = ""
+highlights = [
+  "Validated new protocol testing for banned peptides in urine samples at nmol/L concentrations.",
+  "Testing the use of Machine Learning methods for the identification of new drugs through anomaly detection.",
+  "Responsible for the calibration and maintenance of the nano-HPLC-MS-HRMS instrument",
+]
+
+# These are the various projects I have worked on
+# and how I have driven change within those projects.
+[[projects]]
+display = true
+name = "Healthcare Client"
+affiliation = "Cognizant"
+# url = ""
+startDate = "2023-09-01"
+endDate = "2024-02-01"
+summary = "Provided expertise and strategic insight in a consulting role, managing a complex set of business, stakeholder, and regulatory requirements."
+highlights = [
+  "Developed a thorough overview of Data Privacy requirements for healthcare data.",
+  "Facilitated design thinking workshops to elicit use cases from a range of stakeholders.",
+  "Developed long term roadmap of value drivers within the health ecosystem to demonstrate early value and opportunities to unlock additional value.",
+  "Collaborated across the business to bring diverse expertise and input to the project."
+]
+skills= ["Consulting",  "Business Analyst", "Data Privacy", "Data Security", "Data Architecture"]
+
+[[projects]]
+display = false
+name = "Generative AI Search Application"
+affiliation = "Personal"
+# url = ""
+startDate = "2023-08-08"
+endDate = "present"
+summary = ""
+highlights = [
+]
+skills= ["Rust", "GenAI", "LLM", "Semantic Search", "ETL", "GUI"]
+
+[[projects]]
+display = true
+name = "F1 Performance Analysis"
+affiliation = "Cognizant"
+# url = ""
+startDate = "2023-07-30"
+endDate = "2023-09-30"
+summary = "Interrogated the data from all the F1 races from the season to determine the main contributing factors to the success of the Aston Martin F1 team in the 2023 season, comparing results to both previous seasons and other teams within this season."
+highlights = [
+  "Developed visualisations to communicate areas of the track most important for fast laps.",
+  "Identified key areas of the track for the APAC CEO to use as talking points at the Singapore Grand Prix.",
+]
+skills= ["Bayesian Models", "Data Visualistaion", "PyMC", "Python"]
+
+[[projects]]
+display = false
+name = "AI Powered Image Management Application"
+affiliation = "Personal"
+startDate = "2022-12-01"
+endDate = "present"
+summary = ""
+highlights = []
+skills = []
+
+[[projects]]
+display = true
+name = "Predicting airport security waiting times"
+affiliation = "Personal"
+startDate = "2023-07-20"
+endDate = "2023-08-30"
+summary = "Developed a mathematical model based on the behaviour of crowds and studies of airport security to turn API data on the flights departing Adelaide Airport into a determination of the latest time to arrive for a flight and still make it through security in time."
+highlights = [
+  "Presented this project at PyCon AU"
+]
+skills = ["Monte Carlo Modelling", "ELT", "APIs", "Python", "Visualisation"]
+
+[[projects]]
+display = true
+name = "Modelling Hospital Waiting Times"
+affiliation = "Personal"
+startDate = "2022-01-24"
+endDate = "2023-09-01"
+summary = "Developed a digital twin of a hospital emergency department that can predict future bottlenecks."
+highlights = [
+  "Used Machine Learning algorithm to predicting the number of patients arriving in Emergency for a given hour.",
+  "Developed a Markov Chain Monte Carlo model describing the process of patients moving through the Emergency Department and onto further treatment or discharge.",
+]
+skills = ["Web Scraping", "ELT", "Bayesian Modelling", "Time Series Analysis", "Python"]
+
+[[projects]]
+display = true
+# BHP
+name = "Large Mining Company"
+affiliation = "Cognizant"
+# url = ""
+startDate = "2022-08-01"
+endDate = "2023-06-30"
+summary = "Led a new project as part of a larger program of work to reduce the impact of fatigue on safety incidents."
+highlights = [
+  "Engaged with stakeholders to understand requirements, using Proof of Concept Demonstrations to obtain early feedback.",
+  "Enhanced project governance and privacy controls to align with standards for handling health data.",
+  "Used Natural Language Processing (NLP) to drive insights from a range of unstructured data.",
+  "Utilised advanced statistical and machine learning techniques to deliver data-driven insights and solutions.",
+  "Presented findings, recommendations, and modelling to senior leadership and client teams, leading to significant changes in business processes.",
+]
+skills= ["R", "AWS Sagemaker", "Snowflake", "Data Architecture", "Data Science", "NLP", "Stakeholder Management", "Git"]
+
+[[projects]]
+display = true
+name = "SA Power Networks"
+affiliation = "ASG Group"
+# url = ""
+startDate = "2021-08-01"
+endDate = "2022-07-30"
+summary = "Led a small team automating report generation for regulatory submission, including consultation across the business to ensure quality and availability of the required data. Working at all levels of the Azure data analytics stack to establish best practices for data management, design patterns, support, and use of the cloud data stack."
+highlights = [
+  "Established best practice process for deploying python pipelines on Databricks.",
+  "Deployed production Machine Learning workflows on Databricks ensuring data provenence and model reproducibility."
+]
+skills= ["Azure Data Factory", "Azure Datalake", "Azure Synapse", "Azure SQL", "Databricks", "Python", "Agile"]
+
+[[projects]]
+display = true
+name = "Recommendation Engine for Medical Reports"
+affiliation = "Adelaide MRI"
+startDate = "2020-12-03"
+endDate = "2021-07-30"
+summary = "Integrated Machine Learning recommendation algorithms into a clinical support tool used by Doctors."
+highlights = [
+  "Integrated an MLOps pipeline into the development workflow.",
+  "Decreased the average time to write reports by 21% through timely and useful recommendations.",
+]
+skills = ["Python", "scikit-learn", "flask", "sqlalchemy", "Backend Development", "Software Development", "Git"]
+
+[[projects]]
+name = "Big Data Processing Pipeline"
+affiliation = "The University of Sydney"
+startDate = "2018-02-18"
+endDate = "2020-08-07"
+summary = "Developed a Data Lake and optimisd ETL pipeline to manage and process 10 TB of data for my PhD thesis. This pipeline included a number of complex processing steps involving statistical analysis and machine learning, with the processing running on a quad-core desktop computer."
+highlights = [
+  "Developed interactive dashboard in python able to interrogate the entire dataset.",
+  "Optimised the data pipeline to run all the processing steps in under 24 hours on a quad core CPU.",
+]
+skills = ["Rust", "Machine Learning", "Data Pipeline", "ETL", "Optimisation", "Parallel Computing", "Data Visualisation", "Bokeh", "Software Development", "Docker"]
+
+[[education]]
+studyType = "Doctor of Philosophy"
+institution = "The University of Sydney"
+location = "Sydney, Australia"
+area = "Computational Chemistry"
+startDate = "2015-03-01"
+endDate = "2020-02-29"
+url = "https://sydney.edu.au"
+# courses = []
+# honors = []
+summary = "Used a combination of statistical mechanics and data science to study the translational and rotational dynamics of small molecules in the liquid phase."
+highlights = [
+  "*Thesis*: Liquid Dynamics and Crystal Melting of a Two Dimensional Molecule",
+  "Winning team, Inventing the Future Competition 2016.",
+  "Finalist, Merck Innovation Challenge 2018.",
+  "Journal of Materials Chemistry C Poster Prize 2018.",
+]
+
+[[education]]
+display = true
+studyType = "Bachelor of Advanced Science (Honours)"
+institution = "The University of Sydney"
+location = "Sydney, Australia"
+area = "Chemistry and Computational Science"
+startDate = "2010-03-01"
+endDate = "2015-06-30"
+url = "https://sydney.edu.au"
+summary = "In my Honours thesis I used molecular dynamics simulations of small rigid molecules to investigate the effect of shape on structural and dynamic properties."
+# courses = []
+# honors = []
+highlights = [
+  "*Thesis:* The Role of Molecular Shape on the Properties of the Condensed Phase: A Simulation Study",
+  "1st Class Hounours and 1st in his cohort",
+  "Received Walter J Moore Honours Scholarship for academic merit",
+  "Sydney Abroad International Exchange Scholarship",
+  "Levy Scholarship for achievement in 1st year chemistry",
+  "Undertook research through the Summer Scholarship Program",
+]
+
+[[education]]
+display = false
+studyType = "Bachelor of Science"
+institution = "University of California Santa Barbara"
+location = "Santa Barbara, United States"
+area = "Chemistry"
+startDate = "2013-09-01"
+endDate = "2014-03-30"
+
+[[education]]
+display = false
+studyType = "High School"
+institution = "Normanhurst Boys High School"
+location = "Sydney, Australia"
+area = ""
+startDate = "2004-01-30"
+endDate = "2009-11-30"
+
+[[presentations]]
+conference = "AISA Cyber Conference (National)"
+location = "Melbourne, Australia"
+title = "Navigating the intersection of data, security, and privacy in the age of Smart Cities."
+date = "2023-10-14"
+summary = "Introducing the risks and privacy implications that exist within IoT devices and how they manifest within a smart city."
+
+[[presentations]]
+conference = "Pycon AU"
+location = "Adelaide, Australia"
+title = "How long will it take to get through airport security?"
+date = "2023-08-10"
+summary = "Demonstration of using mathematical models to predict how long we can expect to be waiting to get through airport security at any point of the day."
+
+[[presentations]]
+conference = "eResearch Australia"
+location = "Virtual"
+title = "Optimising the Learning Experience for Researchers at all Levels"
+date = "2021-10-22"
+summary = "Providing an overview of the types of researchers that are seeking training in new technologies and how Intersect has been adjusting it’s course material to cater for these different groups."
+
+# [[awards]]
+# date = "2023-05-09"
+# # highlights = "<Nothing>"
+# issuer = "Toastmasters International"
+# location = "City of London, United Kingdom"
+# title = "Champion in the Division A District X Speech Evaluation Contest"
+# # url = "<Nothing>"
+
+# [[certificates]]
+# date = "2021-09-01"
+# issuer = "Coursera"
+# name = "Learning How to Learn: Powerful mental tools to help you master tough subjects"
+# url = "https://example.com"
+
+
+[[publications]]
+display = false
+name = "Packing concave molecules in crystals and amorphous solids: on the connection between shape and local structure"
+publisher = "Theoretical and Computational Fluid Dynamics"
+releaseDate = "2015-04-21"
+url = "https://dx.doi.org/10.1080/00268976.2015.1046528"
+
+[[skills]]
+category = "Data Science"
+skills = [
+  "Python", 
+  "Machine Learning", 
+  "Generative AI", 
+  "Data Visualisation", 
+  "LLM",
+  "R", 
+  "SQL",
+  "AWS SageMaker"
+]
+
+[[skills]]
+category = "Data Engineering"
+skills = [
+  "SQL", 
+  "Python", 
+  "Azure Data Factory", 
+  "Azure Synapse", 
+  "Databricks", 
+]
+
+[[skills]]
+category = "Soft Skills"
+skills = [
+  "Stakeholder Management", 
+  "Technical Writing", 
+  "Presenting",
+  "Mentoring", 
+  "Workshop Facilitation",
+  "Training",
+  "Leadership",
+]
+
+[[skills]]
+category = "Web Development"
+skills = [
+  "FastAPI", 
+  "Flask", 
+  "Tailwind CSS", 
+  "HTML", 
+  "HTMX", 
+  "WASM", 
+]
