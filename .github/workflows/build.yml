@@ -1,6 +1,8 @@
 name: Compile Document
+on: [push, workflow_dispatch]
 
-on: [push]
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -9,21 +11,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - uses: actions/cache@v3
-        id: cache
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Typst
+        uses: lvignoli/typst-action@v0
         with:
-          path: ~/.cache/Tectonic
-          key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
-          restore-keys: |
-             ${{ runner.os }}-tectonic-
-      - uses: wtfjoke/setup-tectonic@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Run Tectonic
-        run: make
+          source_file: resume.typ
 
-      - name: Upload pdf
+      - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
-          name: resume
-          path: resume_Malcolm_Ramsay.pdf
+          name: PDFs
+          path: resume.pdf
+
+      - name: Get current date
+        id: date
+        run: echo "DATE=$(date +%Y-%m-%d-%H:%M)" >> $GITHUB_ENV
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: github.ref_type == 'tag'
+        with:
+          name: "${{ github.ref_name }} — ${{ env.DATE }}"
+          files: "*.pdf"
