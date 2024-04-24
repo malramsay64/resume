@@ -14,7 +14,7 @@ jobs:
       - name: Typst
         uses: typst-community/setup-typst@v3
         with:
-          source_file: resume.typ
+          cache-dependency-path: template.typ
           
       - name: Compile typst document
         run: typst compile resume.typ resume.pdf
