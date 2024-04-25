@@ -1,5 +1,4 @@
 #import "utils.typ"
-#import "@preview/valkyrie:0.1.0" as valkyrie
 #import "@preview/fontawesome:0.1.0" as fa
 
 /* Styles */
