@@ -1,5 +1,5 @@
 #import "utils.typ"
-#import "@preview/fontawesome:0.1.0" as fa
+#import "@preview/fontawesome:0.4.0" as fa
 
 /* Styles */
 
@@ -135,7 +135,7 @@
         box([#icon #sym.zws #l])
     }
     #let profiles = (
-        contact_display(fa.fa-envelope(fa-set: "Solid"), "mailto:" + info.personal.email), 
+        contact_display(fa.fa-envelope(solid: true), "mailto:" + info.personal.email), 
     )
     #if uservars.showNumber {
         profiles.push(contact_display(fa.fa-phone(), "tel:" + info.personal.phone))
@@ -159,6 +159,8 @@
     }
 
     #headerInfoStyle(profiles.join([ #sym.bar.v ]))
+
+    #headerQuoteStyle(eval(info.personal.summary, mode: "markup"))
 ]
 
 #let styleLabel(str) = {

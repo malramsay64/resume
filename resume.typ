@@ -53,7 +53,6 @@
 #cvheading(cvdata, uservars)
 #cvwork(cvdata, isbreakable: false)
 #cveducation(cvdata, isbreakable: false)
-#pagebreak()
 #cvprojects(cvdata, isbreakable: false)
 // #cvaffiliations(cvdata)
 // #cvawards(cvdata)

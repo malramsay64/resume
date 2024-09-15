@@ -3,9 +3,14 @@ email = "m@malramsay.com"
 name = "Malcolm Ramsay PhD"
 label = "Senior Data Scientist | ML Engineer"
 summary = """
-  Dynamic and results-driven Senior Data Scientist with a PhD in Computational Chemistry and experience across industries verticals, including healthcare, agriculture, and technology consulting. Proven expertise in designing and deploying AI/ML solutions at scale, with deep knowledge of natural language processing (NLP), large language models (LLMs), and machine learning pipelines. Malcolm is adept at building end-to-end data systems using cutting-edge technologies, integrating these new tools into the technical and business environment ensuring stakeholder satisfaction.
-
-  Recognized for technical leadership and mentorship, Malcolm excels in collaborative environments, driving innovation while mentoring junior data scientists and guiding teams through complex AI projects. With a focus on real-world applications of AI, he has successfully led initiatives to optimize business processes, improve healthcare solutions, and deliver data-driven insights for high-impact decision-making.
+  Dynamic and results-driven Senior Data Scientist with a PhD in Computational Chemistry 
+  and expertise across industry verticals, including healthcare, resources, utilities, and education. 
+  Proven experience designing and deploying AI/ML solutions at scale, 
+  with deep knowledge of natural language processing (NLP), large language models (LLMs), and machine learning pipelines.
+  Malcolm excels in building end-to-end data systems using cutting-edge technologies, 
+  integrating these tools and processes into the technical and business landscape ensuring stakeholder satisfaction. 
+  Recognized for his technical leadership and mentoring, Malcolm thrives in collaborative environments, 
+  driving best practices and innovation while upskilling junior team members.
 """
 phone = "+61 466 224 898"
 url = "https://malramsay.com"
@@ -36,11 +41,10 @@ url = "https://cognizant.com/au/en"
 position = "Senior Data Scientist"
 startDate = "2022-08-01"
 endDate = "present"
-summary = "Working in the Adelaide Delivery Centre providing mentorship and training to trainees getting started in their careers in tech."
+summary = "Worked in the Adelaide Delivery Centre providing mentorship and training to associates starting their careers in tech."
 highlights = [
-  "Recognition for _Creating conditions for everyone to Thrive_",
-  "Delivered an interactive Prompt Engineering workshop Cognizant Clients as part of the GenAI Skills initiative.",
-  "Provided mentoring and guidance supporting associates starting their careers in technology.",
+  "Recognised for _Creating conditions for everyone to Thrive_",
+  "Delivered an interactive Prompt Engineering workshop for Cognizant Clients as part of the GenAI Skills initiative.",
 ]
 
 [[work]]
@@ -52,9 +56,7 @@ position = "Data Consultant"
 startDate = "2021-08-01"
 endDate = "2022-07-30"
 summary = "Provided mentoring and technical expertise across the business as a key member of the ASG Data Practice. He was a core member of the ASG Labs project, bringing data to life through proof of concept demonstrations."
-highlights = [
-  "Provided training and mentoring to junior team members and new graduates."
-]
+highlights = [ ]
 
 [[work]]
 display = true
@@ -66,7 +68,6 @@ startDate = "2020-12-03"
 endDate = "2021-07-30"
 summary = "Worked in a small team developing an internal web application aiding Doctors writing their reports."
 highlights = [
-  "Optimised common PostgreSQL database queries, reducing the execution time by up to 90%.",
   "Mentored graduate students in applying programming and data science best practices.",
 ]
 
@@ -88,17 +89,17 @@ highlights = [
 ]
 
 [[work]]
-display=false
+display = true
 organization = "Intersect Australia"
 location = "Sydney, Australia"
 url = "https://intersect.org.au"
 [[work.positions]]
 position = "eResearch Training Administrator"
-startDate = "2016-02-19"
-endDate = "2019-05-31"
+startDate = "2019-06-01"
+endDate = "2020-11-20"
 summary = "Worked at all stages of the training process, including the design of content, the preparation of material, managing attendees, content delivery, and review of course performance."
 highlights = [
-  "Developed and documented best practices for delivering Online training for programming languages during COVID-19 resulting in an 18 point Net Promotor Score improvement over the same suite of courses delivered in person."
+  "Developed and documented best practices for delivering Online training for programming languages during COVID-19 resulting in an 18 point Net Promotor Score improvement over the same suite of courses delivered in person.",
 ]
 [[work.positions]]
 position = "eResearch Trainer"
@@ -106,11 +107,11 @@ startDate = "2016-02-19"
 endDate = "2019-05-31"
 summary = "Delivered training courses across eResearch topics including Python, R, Julia, Git, SQL, MATLAB, and HPC."
 highlights = [
-  "Received 100% Net Promoter Score running _Programming using Julia_ and _Programming using R_."
+  "Received 100% Net Promoter Score running _Programming using Julia_ and _Programming using R_.",
 ]
 
 [[work]]
-display=false
+display = false
 organization = "FluroSat (now Regrow Ag)"
 location = "Sydney, Australia"
 url = "https://www.regrow.ag/"
@@ -130,7 +131,7 @@ organization = "School of Chemistry, The University of Sydney"
 location = "Sydney, Australia"
 url = "https://www.sydney.edu.au/science/schools/school-of-chemistry.html"
 [[work.positions]]
-position = "Research Assisstant"
+position = "Research Assistant"
 startDate = "2014-12-01"
 endDate = "2015-03-30"
 summary = ""
@@ -141,7 +142,7 @@ startDate = "2014-08-01"
 endDate = "2016-06-30"
 summary = "I was responsible for the safety and supervision of a group of 1st year chemistry students performing their laboratory component of the course. The supervision component involves teaching proper laboratory techniques, inciting discussion on the processes involved in the experiment, answering questions, and keeping students on track to finish the experiment in the allotted time."
 highlights = [
-  "Communicate complex scientific ideas in a fun, engaging, and interactive manner."
+  "Communicate complex scientific ideas in a fun, engaging, and interactive manner.",
 ]
 
 [[work]]
@@ -169,18 +170,38 @@ affiliation = "Cognizant"
 startDate = "2024-03-25"
 endDate = "Present"
 summary = """
-  Provided expertise as a Senior Data Scientist to develop best practices for the use of LLMs within a data pipeline containing sensitive health information.
-  This ranged from the development and testing of new models, to developing optimised pipelines to run the models, the model deployment, and the ongoing monitoring of those models.
+  Provided expertise as a Senior Data Scientist 
+  to implement best practices for the use of LLMs 
+  within a data pipeline on the AzureML platform.
+  This ranged from the development and testing of new models, 
+  developing optimised batch pipelines to run the models, 
+  the model deployment, and the ongoing monitoring of those models.
 """
 highlights = [
-  "Improved architecture for self-managed LLM inference making use of longest prefix caching for the prompt, giving a 3.1x increase in throughput for the model.",
-  "Used prompt engineering to increase model performance through an f1 score by 5% with a focus on ensuring reliable output from a batch process.",
-  "Developed NLP processing pipeline using spacy and a RAG architecture to augment the capabilities of the LLM, increasing overall accuracy by 5%."
+  "Improved architecture for self-managed LLM inference making use of longest prefix caching for the prompt, giving over a 3-fold increase in throughput for the model.",
+  "Used prompt engineering to increase model f1 score performance by 5%, ensuring reliable output from the batch process.",
+  "Developed NLP processing pipeline using Spacy and a RAG architecture to augment the capabilities of the LLM, increasing overall accuracy by 5%.",
 ]
-skills = ["AzureML", "LLM", "GenAI", "MLOps", "NLP", "Prompt Engineering", "RAG", "Document Intelligence", "Spacy", "Git", "GitHub", "Docker", "transformers", "langchain", "llama-cpp"]
+skills = [
+  "AzureML",
+  "LLM",
+  "GenAI",
+  "MLOps",
+  "NLP",
+  "Prompt Engineering",
+  "RAG",
+  "Document Intelligence",
+  "Spacy",
+  "Git",
+  "GitHub",
+  "Docker",
+  "transformers",
+  "langchain",
+  "llama-cpp",
+]
 
 [[projects]]
-display = false
+display = true
 # SAHMRI / DTI
 name = "Healthcare Client"
 affiliation = "Cognizant"
@@ -191,23 +212,45 @@ summary = "Provided expertise and strategic insight in a consulting role, managi
 highlights = [
   "Developed a thorough overview of Data Privacy requirements for healthcare data.",
   "Facilitated design thinking workshops to elicit use cases from a range of stakeholders.",
-  "Developed long term roadmap of value drivers within the health ecosystem to demonstrate early value and opportunities to unlock additional value.",
-  "Collaborated across the business to bring diverse expertise and input to the project."
+  "Developed long term roadmap of value drivers within the health ecosystem to demonstrate early value along with later opportunities to unlock additional value.",
+  "Collaborated across the business to bring diverse expertise and input to the project.",
 ]
-skills= ["Consulting",  "Business Analyst", "Data Privacy", "Data Security", "Data Architecture", "Miro"]
+skills = [
+  "Consulting",
+  "Business Analyst",
+  "Data Privacy",
+  "Data Security",
+  "Data Architecture",
+  "Miro",
+]
 
 [[projects]]
-display = false
+display = true
 name = "Generative AI Search Application"
 affiliation = "Personal"
 # url = ""
 startDate = "2023-08-08"
-endDate = "present"
-summary = "Developed a locally hosted proof of concept GenAI search application for Retrieval Augmented Generation (RAG) across pdf documents, used to demonstrate and compare keyword, semantic search underpinning many RAG applications, and a RAG LLM Architecture."
+endDate = "2024-04-05"
+summary = """
+  Developed a locally hosted proof-of-concept search application for PDF Documents
+  used to demonstrate and compare a range of search and retrieval algorithms.
+  This compared traditional keyword search, 
+  semantic vector search underpinning most Retrieval Augmented Generation (RAG) architectures,
+  and a complete RAG LLM Architecture.
+"""
 highlights = [
-  "Created a cross platform, GPU accelerated proof of concept implementing all functionality within a single application.",
+  "Created a cross platform, GPU accelerated proof of concept implementing all functionality within a single desktop application.",
 ]
-skills= ["Rust", "GenAI", "LLM", "Semantic Search", "ETL", "GUI", "RAG", "VectorDB"]
+skills = [
+  "Rust",
+  "GenAI",
+  "LLM",
+  "Semantic Search",
+  "ETL",
+  "GUI",
+  "RAG",
+  "Vector Database",
+]
 
 [[projects]]
 display = true
@@ -215,9 +258,17 @@ name = "Cobol Code Analyser"
 affiliation = "Cognizant"
 startDate = "2024-02-01"
 endDate = "2024-03-20"
-summary ="Built a proof of concept application for using LLMs to drive understanding within a large COBOL code base. This used a RAG inspired architecture, working with tools for understanding code, Tree Sitter Parser and Language Server Protocol to retrieve the most appropriate context, being where a function was being used along with the code for all the functions used within it. This allows for documenting every function and code unit within the codebase."
-highlights = []
-skills = ["GenAI", "LLM", "RAG"]
+summary = """
+  Built a proof of concept application for using LLMs to drive understanding within a large COBOL code base. 
+  This used a RAG inspired architecture, working with tools for understanding code, Tree Sitter Parser and Language Server Protocol to retrieve the most appropriate context, 
+  being where a function was being used along with the code for all the functions used within it. 
+  This allowed for documenting every function and code unit within the codebase without running into context length issues.
+"""
+highlights = [
+  "Used langchain and the OpenAI API to build LLM queries",
+  "Developed interactive visualisation to investigate the codebase at a range of levels.",
+]
+skills = ["GenAI", "LLM", "langchain", "RAG"]
 
 [[projects]]
 display = true
@@ -231,7 +282,7 @@ highlights = [
   "Developed visualisations to communicate areas of the track most important for fast laps.",
   "Identified key areas of the track for the APAC CEO to use as talking points at the Singapore Grand Prix.",
 ]
-skills= ["Bayesian Models", "Data Visualistaion", "PyMC", "Python"]
+skills = ["Bayesian Models", "Data Visualisation", "PyMC", "Python"]
 
 [[projects]]
 display = false
@@ -250,9 +301,7 @@ affiliation = "Personal"
 startDate = "2023-07-20"
 endDate = "2023-08-30"
 summary = "Developed a mathematical model based on the behaviour of crowds and studies of airport security to turn API data on the flights departing Adelaide Airport into a determination of the latest time to arrive for a flight and still make it through security in time."
-highlights = [
-  "Presented this project at PyCon AU"
-]
+highlights = ["Presented this project at PyCon AU"]
 skills = ["Monte Carlo Modelling", "ELT", "APIs", "Python", "Visualisation"]
 
 [[projects]]
@@ -266,7 +315,13 @@ highlights = [
   "Used Machine Learning algorithm to predicting the number of patients arriving in Emergency for a given hour.",
   "Developed a Markov Chain Monte Carlo model describing the process of patients moving through the Emergency Department and onto further treatment or discharge.",
 ]
-skills = ["Web Scraping", "ELT", "Bayesian Modelling", "Time Series Analysis", "Python"]
+skills = [
+  "Web Scraping",
+  "ELT",
+  "Bayesian Modelling",
+  "Time Series Analysis",
+  "Python",
+]
 
 [[projects]]
 display = true
@@ -284,10 +339,19 @@ highlights = [
   "Utilised advanced statistical and machine learning techniques to deliver data-driven insights and solutions.",
   "Presented findings, recommendations, and modelling to senior leadership and client teams, leading to significant changes in business processes.",
 ]
-skills= ["R", "AWS Sagemaker", "Snowflake", "Data Architecture", "Data Science", "NLP", "Stakeholder Management", "Git"]
+skills = [
+  "R",
+  "AWS Sagemaker",
+  "Snowflake",
+  "Data Architecture",
+  "Data Science",
+  "NLP",
+  "Stakeholder Management",
+  "Git",
+]
 
 [[projects]]
-display = false
+display = true
 name = "SA Power Networks"
 affiliation = "ASG Group"
 # url = ""
@@ -296,9 +360,18 @@ endDate = "2022-07-30"
 summary = "Led a small team automating report generation for regulatory submission, including consultation across the business to ensure quality and availability of the required data. Working at all levels of the Azure data analytics stack to establish best practices for data management, design patterns, support, and use of the cloud data stack."
 highlights = [
   "Established best practice process for deploying python pipelines on Databricks.",
-  "Deployed production Machine Learning workflows on Databricks ensuring data provenence and model reproducibility."
+  "Deployed production Machine Learning workflows on Databricks ensuring data provenance and model reproducibility.",
 ]
-skills= ["Azure Data Factory", "Azure Datalake", "Azure Synapse", "Azure SQL", "Databricks", "Python", "Agile", "Data Engineering"]
+skills = [
+  "Azure Data Factory",
+  "Azure Datalake",
+  "Azure Synapse",
+  "Azure SQL",
+  "Databricks",
+  "Python",
+  "Agile",
+  "Data Engineering",
+]
 
 [[projects]]
 display = true
@@ -311,9 +384,19 @@ highlights = [
   "Integrated an MLOps pipeline into the development workflow.",
   "Rearchitected Typescript frontend and Flask backend API to support caching of slow queries.",
   "Decreased the average time to write reports by 21% through timely and useful recommendations.",
-  "Designed PostgreSQL database schema and indexing to ensure application responsiveness.",
+  "Designed PostgreSQL database schema and optimised common queries to ensure application responsiveness, reducing execution time by 80%",
 ]
-skills = ["Python", "scikit-learn", "flask", "sqlalchemy", "PostgreSQL", "Backend Development", "Angular", "Software Development", "Git"]
+skills = [
+  "Python",
+  "scikit-learn",
+  "flask",
+  "sqlalchemy",
+  "PostgreSQL",
+  "Backend Development",
+  "Angular",
+  "Software Development",
+  "Git",
+]
 
 [[projects]]
 display = false
@@ -321,12 +404,24 @@ name = "Big Data Processing Pipeline"
 affiliation = "The University of Sydney"
 startDate = "2018-02-18"
 endDate = "2020-08-07"
-summary = "Developed a Data Lake and optimisd ETL pipeline to manage and process 10 TB of data for my PhD thesis. This pipeline included a number of complex processing steps involving statistical analysis and machine learning, with the processing running on a quad-core desktop computer."
+summary = "Developed a Data Lake and optimised ETL pipeline to manage and process 10 TB of data for my PhD thesis. This pipeline included a number of complex processing steps involving statistical analysis and machine learning, with the processing running on a quad-core desktop computer."
 highlights = [
   "Developed interactive dashboard in python able to interrogate the entire dataset.",
   "Optimised the data pipeline to run all the processing steps in under 24 hours on a quad core CPU.",
 ]
-skills = ["Rust", "Machine Learning", "Data Pipeline", "ETL", "Optimisation", "Parallel Computing", "Data Visualisation", "Bokeh", "Software Development", "Docker", "Data Engineering"]
+skills = [
+  "Rust",
+  "Machine Learning",
+  "Data Pipeline",
+  "ETL",
+  "Optimisation",
+  "Parallel Computing",
+  "Data Visualisation",
+  "Bokeh",
+  "Software Development",
+  "Docker",
+  "Data Engineering",
+]
 
 [[education]]
 studyType = "Doctor of Philosophy"
@@ -360,7 +455,7 @@ summary = "In my Honours thesis I used molecular dynamics simulations of small r
 # honors = []
 highlights = [
   "*Thesis:* The Role of Molecular Shape on the Properties of the Condensed Phase: A Simulation Study",
-  "1st Class Hounours and 1st in his cohort",
+  "1st Class Honours and 1st in his cohort",
   "Received Walter J Moore Honours Scholarship for academic merit",
   "Sydney Abroad International Exchange Scholarship",
   "Levy Scholarship for achievement in 1st year chemistry",
@@ -442,28 +537,22 @@ skills = [
   "Natural Language Processing",
   "Data Visualisation",
   "LLM",
-  "R", 
+  "R",
   "SQL",
-  "AWS SageMaker"
+  "AWS SageMaker",
 ]
 
 [[skills]]
 category = "Data Engineering"
-skills = [
-  "SQL",
-  "Python",
-  "Azure Data Factory",
-  "Azure Synapse",
-  "Databricks",
-]
+skills = ["SQL", "Python", "Azure Data Factory", "Azure Synapse", "Databricks"]
 
 [[skills]]
 category = "Soft Skills"
 skills = [
-  "Stakeholder Management", 
-  "Technical Writing", 
+  "Stakeholder Management",
+  "Technical Writing",
   "Presenting",
-  "Mentoring", 
+  "Mentoring",
   "Workshop Facilitation",
   "Training",
   "Leadership",
@@ -471,11 +560,4 @@ skills = [
 
 [[skills]]
 category = "Web Development"
-skills = [
-  "FastAPI", 
-  "Flask", 
-  "Tailwind CSS", 
-  "HTML", 
-  "HTMX", 
-  "WASM", 
-]
+skills = ["FastAPI", "Flask", "Tailwind CSS", "HTML", "HTMX", "WASM"]
