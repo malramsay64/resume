@@ -14,7 +14,7 @@ jobs:
       - name: Typst
         uses: typst-community/setup-typst@v3
         with:
-          typst-version: "0.10.0"
+          typst-version: "0.11.1"
           cache-dependency-path: template.typ
           
       - name: Compile typst document
