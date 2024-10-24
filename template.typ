@@ -14,7 +14,7 @@
 #let headerQuoteStyle(str) = {text(
     size: 10pt,
     weight: "medium",
-    style: "italic",
+    // style: "italic",
     fill: accentColor,
     str
 )}

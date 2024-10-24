@@ -305,7 +305,7 @@ highlights = ["Presented this project at PyCon AU"]
 skills = ["Monte Carlo Modelling", "ELT", "APIs", "Python", "Visualisation"]
 
 [[projects]]
-display = true
+display = false
 name = "Modelling Hospital Waiting Times"
 affiliation = "Personal"
 startDate = "2022-01-24"
